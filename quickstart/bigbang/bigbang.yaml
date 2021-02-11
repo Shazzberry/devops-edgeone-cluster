@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: environment-repo
+  namespace: bigbang
+spec:
+  interval: 1m
+  url: https://github.com/Shazzberry/devops-edgeone-cluster.git
+  ref:
+    branch: davidallen-quickstart
